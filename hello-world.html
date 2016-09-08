@@ -28,7 +28,7 @@
 
 .buttonStyle:hover {
 	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
+	background-color: #d3d3d3; /*#FCF9D6;*/
 	color: #996633;
 	cursor: pointer;
 }
@@ -45,7 +45,7 @@
 <body>
 <div id="mainContent">
 <p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
+<button id="clickButton" class="buttonStyle">Don't click me</button>
 </div>
 <script> 
 var myButton = document.getElementById("clickButton");
@@ -54,7 +54,7 @@ var myText = document.getElementById("helloText");
 myButton.addEventListener('click', doSomething, false)
 
 function doSomething() {
-	myText.textContent = "hello, world!";
+	myText.textContent = "KABOOOM!";
 }
 </script>
 
